@@ -214,9 +214,17 @@ class SiteController extends Controller {
 
         $contents = curl_exec($ch);
 
-        echo '<pre>';
-        echo $contents;
-        echo '</pre>';
+        $info = curl_getinfo($ch);
+
+        echo "<br/>";
+        echo "<strong>INFO :</strong><br/>";
+        echo "<pre>";
+        print_r($info);
+        echo "</pre>";
+
+        echo "<hr/><br/><br/>";
+
+        echo "$contents<br/>";
     }
 
 }
