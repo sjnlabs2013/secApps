@@ -13856,3 +13856,1224 @@ Stack trace:
     'REQUEST_TIME_FLOAT' => 1506339344.432
     'REQUEST_TIME' => 1506339344
 ]
+2017-09-26 06:17:49 [::1][-][-][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message 'Your request was made with invalid credentials.' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:91
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(74): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Controller.php(144): yii\base\Module->beforeAction(Object(yii\rest\IndexAction))
+#6 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#7 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('v1/country/inde...', Array)
+#8 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#10 {main}
+2017-09-26 06:17:49 [::1][-][-][info][application] $_COOKIE = [
+    '_xsrf' => '2|ab12e940|03648755a27864982d7cf976038b58f3|1503924006'
+    'username-localhost-8888' => '\"2|1:0|10:1505777299|23:username-localhost-8888|44:OTllYzlhZTdjMDZkNDAzZmFjMTlkOGZlMDY3MzBiYWY=|90189480111f8a41964b4948432f9e95d1d4cbd84aad93331f337dc6d4d623e9\"'
+    'username-localhost-8889' => '\"2|1:0|10:1504006170|23:username-localhost-8889|44:OTQ2OTJiNzc1YzU2NGFkZThlNzM4MWVmNTRlM2MyZjE=|7576573c04a411b610e8d7a6bd5774dd8a6b7b8c7215154bbf3a397c135b882a\"'
+    'advanced-backend' => 'bqb7a380pk22emhdv1vl36qhs4'
+    '_csrf-backend' => '492b4f79bd0b74a7940cbb63a5a6af57d4bbfbef6f3718eed27a5fb72121ecd2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"H*=Ç%F;”6PF5\\9Ï”Þ<Âev»ÓØøÆót\";}'
+    'advanced-frontend' => '3hmkpjrv8h1i0e9dh48nf66hq6'
+    '_csrf-frontend' => '52ae5a5341f6c543fc5859865b69e6c54fb64ce8fee1cbfadd4b90deb6f1687ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ì„›W:ø\\öT*¾(ÜÌ=®143Ï‰¦s\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_xsrf=2|ab12e940|03648755a27864982d7cf976038b58f3|1503924006; username-localhost-8888=\"2|1:0|10:1505777299|23:username-localhost-8888|44:OTllYzlhZTdjMDZkNDAzZmFjMTlkOGZlMDY3MzBiYWY=|90189480111f8a41964b4948432f9e95d1d4cbd84aad93331f337dc6d4d623e9\"; username-localhost-8889=\"2|1:0|10:1504006170|23:username-localhost-8889|44:OTQ2OTJiNzc1YzU2NGFkZThlNzM4MWVmNTRlM2MyZjE=|7576573c04a411b610e8d7a6bd5774dd8a6b7b8c7215154bbf3a397c135b882a\"; advanced-backend=bqb7a380pk22emhdv1vl36qhs4; _csrf-backend=492b4f79bd0b74a7940cbb63a5a6af57d4bbfbef6f3718eed27a5fb72121ecd2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1DH%2A%3D%C7%25F%15%3B%1C%946PF5%5C9%CF%94%DE%19%3C%C2ev%BB%D3%D8%F8%C6%F3t%22%3B%7D; advanced-frontend=3hmkpjrv8h1i0e9dh48nf66hq6; _csrf-frontend=52ae5a5341f6c543fc5859865b69e6c54fb64ce8fee1cbfadd4b90deb6f1687ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%EC%84%9BW%3A%8F%1D%F8%5C%F6T%2A%0B%15%BE%28%DC%CC%3D%AE1%8F4%0F3%CF%14%89%A6s%8D%0D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '51496'
+    'REDIRECT_URL' => '/secApps/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/countries'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1506399469.843
+    'REQUEST_TIME' => 1506399469
+]
+2017-09-26 06:18:19 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('<span class="st...')
+#6 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#8 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Command.php(887): yii\db\Command->logQuery('<span class="st...')
+#9 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#10 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#11 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one('<span class="ke...')
+#12 C:\xampp\htdocs\secApps\vendor\dektrium\yii2-user\Finder.php(116): yii\db\ActiveQuery->one()
+#13 C:\xampp\htdocs\secApps\vendor\dektrium\yii2-user\Finder.php(144): dektrium\user\Finder->findUserByUsername('<span class="st...')
+#14 C:\xampp\htdocs\secApps\vendor\dektrium\yii2-user\models\LoginForm.php(158): dektrium\user\Finder->findUserByUsernameOrEmail('<span class="st...')
+#15 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Model.php(343): dektrium\user\models\LoginForm->beforeValidate()
+#16 C:\xampp\htdocs\secApps\api\modules\v1\Module.php(47): yii\base\Model->validate()
+#17 [internal function]: api\modules\v1\Module->auth('<span class="st...', '<span class="st...')
+#18 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\HttpBasicAuth.php(92): call_user_func('[<span class="t...', '<span class="st...', '<span class="st...')
+#19 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(61): yii\filters\auth\HttpBasicAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#20 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#21 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#22 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Component.php(545): call_user_func('[<span class="t...', Object(yii\base\ActionEvent))
+#23 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(676): yii\base\Component->trigger('<span class="st...', Object(yii\base\ActionEvent))
+#24 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Controller.php(144): yii\base\Module->beforeAction(Object(yii\rest\IndexAction))
+#25 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#26 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#27 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#29 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('<span class="st...')
+#4 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#6 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Command.php(887): yii\db\Command->logQuery('<span class="st...')
+#7 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#8 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#9 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one('<span class="ke...')
+#10 C:\xampp\htdocs\secApps\vendor\dektrium\yii2-user\Finder.php(116): yii\db\ActiveQuery->one()
+#11 C:\xampp\htdocs\secApps\vendor\dektrium\yii2-user\Finder.php(144): dektrium\user\Finder->findUserByUsername('<span class="st...')
+#12 C:\xampp\htdocs\secApps\vendor\dektrium\yii2-user\models\LoginForm.php(158): dektrium\user\Finder->findUserByUsernameOrEmail('<span class="st...')
+#13 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Model.php(343): dektrium\user\models\LoginForm->beforeValidate()
+#14 C:\xampp\htdocs\secApps\api\modules\v1\Module.php(47): yii\base\Model->validate()
+#15 [internal function]: api\modules\v1\Module->auth('<span class="st...', '<span class="st...')
+#16 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\HttpBasicAuth.php(92): call_user_func('[<span class="t...', '<span class="st...', '<span class="st...')
+#17 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(61): yii\filters\auth\HttpBasicAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#18 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#19 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#20 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Component.php(545): call_user_func('[<span class="t...', Object(yii\base\ActionEvent))
+#21 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(676): yii\base\Component->trigger('<span class="st...', Object(yii\base\ActionEvent))
+#22 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Controller.php(144): yii\base\Module->beforeAction(Object(yii\rest\IndexAction))
+#23 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#24 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#25 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#27 {main}
+Additional Information:
+
+2017-09-26 06:18:18 [::1][-][-][info][application] $_COOKIE = [
+    '_xsrf' => '2|ab12e940|03648755a27864982d7cf976038b58f3|1503924006'
+    'username-localhost-8888' => '\"2|1:0|10:1505777299|23:username-localhost-8888|44:OTllYzlhZTdjMDZkNDAzZmFjMTlkOGZlMDY3MzBiYWY=|90189480111f8a41964b4948432f9e95d1d4cbd84aad93331f337dc6d4d623e9\"'
+    'username-localhost-8889' => '\"2|1:0|10:1504006170|23:username-localhost-8889|44:OTQ2OTJiNzc1YzU2NGFkZThlNzM4MWVmNTRlM2MyZjE=|7576573c04a411b610e8d7a6bd5774dd8a6b7b8c7215154bbf3a397c135b882a\"'
+    'advanced-backend' => 'bqb7a380pk22emhdv1vl36qhs4'
+    '_csrf-backend' => '492b4f79bd0b74a7940cbb63a5a6af57d4bbfbef6f3718eed27a5fb72121ecd2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"H*=Ç%F;”6PF5\\9Ï”Þ<Âev»ÓØøÆót\";}'
+    'advanced-frontend' => '3hmkpjrv8h1i0e9dh48nf66hq6'
+    '_csrf-frontend' => '52ae5a5341f6c543fc5859865b69e6c54fb64ce8fee1cbfadd4b90deb6f1687ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ì„›W:ø\\öT*¾(ÜÌ=®143Ï‰¦s\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_xsrf=2|ab12e940|03648755a27864982d7cf976038b58f3|1503924006; username-localhost-8888=\"2|1:0|10:1505777299|23:username-localhost-8888|44:OTllYzlhZTdjMDZkNDAzZmFjMTlkOGZlMDY3MzBiYWY=|90189480111f8a41964b4948432f9e95d1d4cbd84aad93331f337dc6d4d623e9\"; username-localhost-8889=\"2|1:0|10:1504006170|23:username-localhost-8889|44:OTQ2OTJiNzc1YzU2NGFkZThlNzM4MWVmNTRlM2MyZjE=|7576573c04a411b610e8d7a6bd5774dd8a6b7b8c7215154bbf3a397c135b882a\"; advanced-backend=bqb7a380pk22emhdv1vl36qhs4; _csrf-backend=492b4f79bd0b74a7940cbb63a5a6af57d4bbfbef6f3718eed27a5fb72121ecd2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1DH%2A%3D%C7%25F%15%3B%1C%946PF5%5C9%CF%94%DE%19%3C%C2ev%BB%D3%D8%F8%C6%F3t%22%3B%7D; advanced-frontend=3hmkpjrv8h1i0e9dh48nf66hq6; _csrf-frontend=52ae5a5341f6c543fc5859865b69e6c54fb64ce8fee1cbfadd4b90deb6f1687ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%EC%84%9BW%3A%8F%1D%F8%5C%F6T%2A%0B%15%BE%28%DC%CC%3D%AE1%8F4%0F3%CF%14%89%A6s%8D%0D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '51535'
+    'REDIRECT_URL' => '/secApps/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/countries'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'PHP_AUTH_USER' => 'superadmin'
+    'PHP_AUTH_PW' => 'adminpass'
+    'REQUEST_TIME_FLOAT' => 1506399498.762
+    'REQUEST_TIME' => 1506399498
+]
+2017-09-26 06:27:28 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Request.php:195
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#3 {main}
+2017-09-26 06:27:28 [::1][-][-][info][application] $_COOKIE = [
+    '_xsrf' => '2|ab12e940|03648755a27864982d7cf976038b58f3|1503924006'
+    'username-localhost-8888' => '\"2|1:0|10:1505777299|23:username-localhost-8888|44:OTllYzlhZTdjMDZkNDAzZmFjMTlkOGZlMDY3MzBiYWY=|90189480111f8a41964b4948432f9e95d1d4cbd84aad93331f337dc6d4d623e9\"'
+    'username-localhost-8889' => '\"2|1:0|10:1504006170|23:username-localhost-8889|44:OTQ2OTJiNzc1YzU2NGFkZThlNzM4MWVmNTRlM2MyZjE=|7576573c04a411b610e8d7a6bd5774dd8a6b7b8c7215154bbf3a397c135b882a\"'
+    'advanced-backend' => 'bqb7a380pk22emhdv1vl36qhs4'
+    '_csrf-backend' => '492b4f79bd0b74a7940cbb63a5a6af57d4bbfbef6f3718eed27a5fb72121ecd2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"H*=Ç%F;”6PF5\\9Ï”Þ<Âev»ÓØøÆót\";}'
+    'advanced-frontend' => '3hmkpjrv8h1i0e9dh48nf66hq6'
+    '_csrf-frontend' => '52ae5a5341f6c543fc5859865b69e6c54fb64ce8fee1cbfadd4b90deb6f1687ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ì„›W:ø\\öT*¾(ÜÌ=®143Ï‰¦s\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_xsrf=2|ab12e940|03648755a27864982d7cf976038b58f3|1503924006; username-localhost-8888=\"2|1:0|10:1505777299|23:username-localhost-8888|44:OTllYzlhZTdjMDZkNDAzZmFjMTlkOGZlMDY3MzBiYWY=|90189480111f8a41964b4948432f9e95d1d4cbd84aad93331f337dc6d4d623e9\"; username-localhost-8889=\"2|1:0|10:1504006170|23:username-localhost-8889|44:OTQ2OTJiNzc1YzU2NGFkZThlNzM4MWVmNTRlM2MyZjE=|7576573c04a411b610e8d7a6bd5774dd8a6b7b8c7215154bbf3a397c135b882a\"; advanced-backend=bqb7a380pk22emhdv1vl36qhs4; _csrf-backend=492b4f79bd0b74a7940cbb63a5a6af57d4bbfbef6f3718eed27a5fb72121ecd2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1DH%2A%3D%C7%25F%15%3B%1C%946PF5%5C9%CF%94%DE%19%3C%C2ev%BB%D3%D8%F8%C6%F3t%22%3B%7D; advanced-frontend=3hmkpjrv8h1i0e9dh48nf66hq6; _csrf-frontend=52ae5a5341f6c543fc5859865b69e6c54fb64ce8fee1cbfadd4b90deb6f1687ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%EC%84%9BW%3A%8F%1D%F8%5C%F6T%2A%0B%15%BE%28%DC%CC%3D%AE1%8F4%0F3%CF%14%89%A6s%8D%0D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '51758'
+    'REDIRECT_URL' => '/secApps/api/web/v1/countries/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/countries/'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'PHP_AUTH_USER' => 'superadmin'
+    'PHP_AUTH_PW' => 'adminpass'
+    'REQUEST_TIME_FLOAT' => 1506400048.121
+    'REQUEST_TIME' => 1506400048
+]
+2017-09-26 06:28:06 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Request.php:195
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#3 {main}
+2017-09-26 06:28:06 [::1][-][-][info][application] $_COOKIE = [
+    '_xsrf' => '2|ab12e940|03648755a27864982d7cf976038b58f3|1503924006'
+    'username-localhost-8888' => '\"2|1:0|10:1505777299|23:username-localhost-8888|44:OTllYzlhZTdjMDZkNDAzZmFjMTlkOGZlMDY3MzBiYWY=|90189480111f8a41964b4948432f9e95d1d4cbd84aad93331f337dc6d4d623e9\"'
+    'username-localhost-8889' => '\"2|1:0|10:1504006170|23:username-localhost-8889|44:OTQ2OTJiNzc1YzU2NGFkZThlNzM4MWVmNTRlM2MyZjE=|7576573c04a411b610e8d7a6bd5774dd8a6b7b8c7215154bbf3a397c135b882a\"'
+    'advanced-backend' => 'bqb7a380pk22emhdv1vl36qhs4'
+    '_csrf-backend' => '492b4f79bd0b74a7940cbb63a5a6af57d4bbfbef6f3718eed27a5fb72121ecd2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"H*=Ç%F;”6PF5\\9Ï”Þ<Âev»ÓØøÆót\";}'
+    'advanced-frontend' => '3hmkpjrv8h1i0e9dh48nf66hq6'
+    '_csrf-frontend' => '52ae5a5341f6c543fc5859865b69e6c54fb64ce8fee1cbfadd4b90deb6f1687ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ì„›W:ø\\öT*¾(ÜÌ=®143Ï‰¦s\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_xsrf=2|ab12e940|03648755a27864982d7cf976038b58f3|1503924006; username-localhost-8888=\"2|1:0|10:1505777299|23:username-localhost-8888|44:OTllYzlhZTdjMDZkNDAzZmFjMTlkOGZlMDY3MzBiYWY=|90189480111f8a41964b4948432f9e95d1d4cbd84aad93331f337dc6d4d623e9\"; username-localhost-8889=\"2|1:0|10:1504006170|23:username-localhost-8889|44:OTQ2OTJiNzc1YzU2NGFkZThlNzM4MWVmNTRlM2MyZjE=|7576573c04a411b610e8d7a6bd5774dd8a6b7b8c7215154bbf3a397c135b882a\"; advanced-backend=bqb7a380pk22emhdv1vl36qhs4; _csrf-backend=492b4f79bd0b74a7940cbb63a5a6af57d4bbfbef6f3718eed27a5fb72121ecd2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1DH%2A%3D%C7%25F%15%3B%1C%946PF5%5C9%CF%94%DE%19%3C%C2ev%BB%D3%D8%F8%C6%F3t%22%3B%7D; advanced-frontend=3hmkpjrv8h1i0e9dh48nf66hq6; _csrf-frontend=52ae5a5341f6c543fc5859865b69e6c54fb64ce8fee1cbfadd4b90deb6f1687ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%EC%84%9BW%3A%8F%1D%F8%5C%F6T%2A%0B%15%BE%28%DC%CC%3D%AE1%8F4%0F3%CF%14%89%A6s%8D%0D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '51767'
+    'REDIRECT_URL' => '/secApps/api/web/v1/country'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/country'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'PHP_AUTH_USER' => 'superadmin'
+    'PHP_AUTH_PW' => 'adminpass'
+    'REQUEST_TIME_FLOAT' => 1506400086.665
+    'REQUEST_TIME' => 1506400086
+]
+2017-09-26 07:14:24 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Request.php:195
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#3 {main}
+2017-09-26 07:14:23 [::1][-][-][info][application] $_COOKIE = [
+    '_xsrf' => '2|ab12e940|03648755a27864982d7cf976038b58f3|1503924006'
+    'username-localhost-8888' => '\"2|1:0|10:1505777299|23:username-localhost-8888|44:OTllYzlhZTdjMDZkNDAzZmFjMTlkOGZlMDY3MzBiYWY=|90189480111f8a41964b4948432f9e95d1d4cbd84aad93331f337dc6d4d623e9\"'
+    'username-localhost-8889' => '\"2|1:0|10:1504006170|23:username-localhost-8889|44:OTQ2OTJiNzc1YzU2NGFkZThlNzM4MWVmNTRlM2MyZjE=|7576573c04a411b610e8d7a6bd5774dd8a6b7b8c7215154bbf3a397c135b882a\"'
+    'advanced-backend' => 'bqb7a380pk22emhdv1vl36qhs4'
+    '_csrf-backend' => '492b4f79bd0b74a7940cbb63a5a6af57d4bbfbef6f3718eed27a5fb72121ecd2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"H*=Ç%F;”6PF5\\9Ï”Þ<Âev»ÓØøÆót\";}'
+    'advanced-frontend' => '3hmkpjrv8h1i0e9dh48nf66hq6'
+    '_csrf-frontend' => '52ae5a5341f6c543fc5859865b69e6c54fb64ce8fee1cbfadd4b90deb6f1687ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ì„›W:ø\\öT*¾(ÜÌ=®143Ï‰¦s\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_xsrf=2|ab12e940|03648755a27864982d7cf976038b58f3|1503924006; username-localhost-8888=\"2|1:0|10:1505777299|23:username-localhost-8888|44:OTllYzlhZTdjMDZkNDAzZmFjMTlkOGZlMDY3MzBiYWY=|90189480111f8a41964b4948432f9e95d1d4cbd84aad93331f337dc6d4d623e9\"; username-localhost-8889=\"2|1:0|10:1504006170|23:username-localhost-8889|44:OTQ2OTJiNzc1YzU2NGFkZThlNzM4MWVmNTRlM2MyZjE=|7576573c04a411b610e8d7a6bd5774dd8a6b7b8c7215154bbf3a397c135b882a\"; advanced-backend=bqb7a380pk22emhdv1vl36qhs4; _csrf-backend=492b4f79bd0b74a7940cbb63a5a6af57d4bbfbef6f3718eed27a5fb72121ecd2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1DH%2A%3D%C7%25F%15%3B%1C%946PF5%5C9%CF%94%DE%19%3C%C2ev%BB%D3%D8%F8%C6%F3t%22%3B%7D; advanced-frontend=3hmkpjrv8h1i0e9dh48nf66hq6; _csrf-frontend=52ae5a5341f6c543fc5859865b69e6c54fb64ce8fee1cbfadd4b90deb6f1687ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%EC%84%9BW%3A%8F%1D%F8%5C%F6T%2A%0B%15%BE%28%DC%CC%3D%AE1%8F4%0F3%CF%14%89%A6s%8D%0D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '52462'
+    'REDIRECT_URL' => '/secApps/api/web/v1/countries/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/countries/'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'PHP_AUTH_USER' => 'superadmin'
+    'PHP_AUTH_PW' => 'adminpass'
+    'REQUEST_TIME_FLOAT' => 1506402863.946
+    'REQUEST_TIME' => 1506402863
+]
+2017-09-26 07:22:19 [::1][-][-][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message 'Your request was made with invalid credentials.' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:91
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(74): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Controller.php(144): yii\base\Module->beforeAction(Object(yii\rest\IndexAction))
+#6 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#7 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('v1/country/inde...', Array)
+#8 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#10 {main}
+2017-09-26 07:22:19 [::1][-][-][info][application] $_COOKIE = [
+    'jenkins-timestamper-offset' => '-39600000'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'jenkins-timestamper-offset=-39600000'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '52636'
+    'REDIRECT_URL' => '/secApps/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/countries'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1506403339.784
+    'REQUEST_TIME' => 1506403339
+]
+2017-09-26 07:22:30 [::1][-][-][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message 'Your request was made with invalid credentials.' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:91
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(74): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Controller.php(144): yii\base\Module->beforeAction(Object(yii\rest\IndexAction))
+#6 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#7 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('v1/country/inde...', Array)
+#8 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#10 {main}
+2017-09-26 07:22:30 [::1][-][-][info][application] $_COOKIE = [
+    'jenkins-timestamper-offset' => '-39600000'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/secApps/api/web/v1/countries'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'jenkins-timestamper-offset=-39600000'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '52641'
+    'REDIRECT_URL' => '/secApps/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/countries'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1506403350.033
+    'REQUEST_TIME' => 1506403350
+]
+2017-09-26 07:22:39 [::1][-][-][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message 'Your request was made with invalid credentials.' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:91
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(74): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Controller.php(144): yii\base\Module->beforeAction(Object(yii\rest\IndexAction))
+#6 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#7 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('v1/country/inde...', Array)
+#8 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#10 {main}
+2017-09-26 07:22:39 [::1][-][-][info][application] $_COOKIE = [
+    'jenkins-timestamper-offset' => '-39600000'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'jenkins-timestamper-offset=-39600000'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '52643'
+    'REDIRECT_URL' => '/secApps/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/countries'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1506403359.344
+    'REQUEST_TIME' => 1506403359
+]
+2017-09-26 07:22:42 [::1][-][-][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message 'Your request was made with invalid credentials.' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:91
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(74): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Controller.php(144): yii\base\Module->beforeAction(Object(yii\rest\IndexAction))
+#6 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#7 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('v1/country/inde...', Array)
+#8 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#10 {main}
+2017-09-26 07:22:42 [::1][-][-][info][application] $_COOKIE = [
+    'jenkins-timestamper-offset' => '-39600000'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/secApps/api/web/v1/countries'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'jenkins-timestamper-offset=-39600000'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '52643'
+    'REDIRECT_URL' => '/secApps/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/countries'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1506403362.311
+    'REQUEST_TIME' => 1506403362
+]
+2017-09-26 07:23:16 [::1][-][-][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message 'Your request was made with invalid credentials.' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:91
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(74): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Controller.php(144): yii\base\Module->beforeAction(Object(yii\rest\IndexAction))
+#6 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#7 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('v1/country/inde...', Array)
+#8 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#10 {main}
+2017-09-26 07:23:16 [::1][-][-][info][application] $_COOKIE = [
+    'jenkins-timestamper-offset' => '-39600000'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'jenkins-timestamper-offset=-39600000'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '52656'
+    'REDIRECT_URL' => '/secApps/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/countries'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1506403396.351
+    'REQUEST_TIME' => 1506403396
+]
+2017-09-26 07:23:22 [::1][-][-][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message 'Your request was made with invalid credentials.' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:91
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\HttpBasicAuth.php(96): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(61): yii\filters\auth\HttpBasicAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Controller.php(144): yii\base\Module->beforeAction(Object(yii\rest\IndexAction))
+#7 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#8 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('v1/country/inde...', Array)
+#9 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#11 {main}
+2017-09-26 07:23:22 [::1][-][-][info][application] $_COOKIE = [
+    'jenkins-timestamper-offset' => '-39600000'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'jenkins-timestamper-offset=-39600000'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '52657'
+    'REDIRECT_URL' => '/secApps/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/countries'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'PHP_AUTH_USER' => 'aaa'
+    'PHP_AUTH_PW' => 'sfdfd'
+    'REQUEST_TIME_FLOAT' => 1506403402.744
+    'REQUEST_TIME' => 1506403402
+]
+2017-09-26 07:23:23 [::1][-][-][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message 'Your request was made with invalid credentials.' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:91
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(74): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Controller.php(144): yii\base\Module->beforeAction(Object(yii\rest\IndexAction))
+#6 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#7 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('v1/country/inde...', Array)
+#8 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#10 {main}
+2017-09-26 07:23:23 [::1][-][-][info][application] $_COOKIE = [
+    'jenkins-timestamper-offset' => '-39600000'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/secApps/api/web/v1/countries'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'jenkins-timestamper-offset=-39600000'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '52657'
+    'REDIRECT_URL' => '/secApps/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/countries'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1506403403.015
+    'REQUEST_TIME' => 1506403403
+]
+2017-09-26 07:23:41 [::1][-][-][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message 'Your request was made with invalid credentials.' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:91
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(74): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Controller.php(144): yii\base\Module->beforeAction(Object(yii\rest\IndexAction))
+#6 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#7 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('v1/country/inde...', Array)
+#8 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#10 {main}
+2017-09-26 07:23:41 [::1][-][-][info][application] $_COOKIE = [
+    'jenkins-timestamper-offset' => '-39600000'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'jenkins-timestamper-offset=-39600000'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '52666'
+    'REDIRECT_URL' => '/secApps/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/countries'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1506403421.023
+    'REQUEST_TIME' => 1506403421
+]
+2017-09-26 07:23:43 [::1][-][-][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message 'Your request was made with invalid credentials.' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:91
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(74): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Controller.php(144): yii\base\Module->beforeAction(Object(yii\rest\IndexAction))
+#6 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#7 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('v1/country/inde...', Array)
+#8 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#10 {main}
+2017-09-26 07:23:42 [::1][-][-][info][application] $_COOKIE = [
+    'jenkins-timestamper-offset' => '-39600000'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/secApps/api/web/v1/countries'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'jenkins-timestamper-offset=-39600000'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '52666'
+    'REDIRECT_URL' => '/secApps/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/countries'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1506403422.953
+    'REQUEST_TIME' => 1506403422
+]
+2017-09-26 07:53:55 [::1][-][-][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message 'Your request was made with invalid credentials.' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:91
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(74): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Controller.php(144): yii\base\Module->beforeAction(Object(yii\rest\IndexAction))
+#6 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#7 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('v1/country/inde...', Array)
+#8 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#10 {main}
+2017-09-26 07:53:55 [::1][-][-][info][application] $_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => '*/*'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '53196'
+    'REDIRECT_URL' => '/secApps/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/countries'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1506405235.29
+    'REQUEST_TIME' => 1506405235
+]
+2017-09-26 08:35:03 [::1][-][-][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message 'Your request was made with invalid credentials.' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:91
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(74): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Controller.php(144): yii\base\Module->beforeAction(Object(yii\rest\IndexAction))
+#6 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#7 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('v1/country/inde...', Array)
+#8 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#10 {main}
+2017-09-26 08:35:03 [::1][-][-][info][application] $_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'CONTENT_TYPE' => 'application/xml'
+    'HTTP_ACCEPT' => 'application/xml'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '55264'
+    'REDIRECT_URL' => '/secApps/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/countries'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1506407703.211
+    'REQUEST_TIME' => 1506407703
+]
+2017-09-26 08:35:16 [::1][-][-][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message 'Your request was made with invalid credentials.' in C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:91
+Stack trace:
+#0 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(74): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Controller.php(144): yii\base\Module->beforeAction(Object(yii\rest\IndexAction))
+#6 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#7 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('v1/country/inde...', Array)
+#8 C:\xampp\htdocs\secApps\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\secApps\api\web\index.php(19): yii\base\Application->run()
+#10 {main}
+2017-09-26 08:35:16 [::1][-][-][info][application] $_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'CONTENT_TYPE' => 'application/xml'
+    'HTTP_ACCEPT' => 'application/xml'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\bin;C:\\xampp\\php;C:\\Users\\harla\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\putty;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Ant\\apache-ant-1.9.7\\bin;C:\\Program Files\\Java\\jdk1.8.0_77\\bin;C:\\Harlan\\openssl\\new1\\openssl-0.9.8r-x64_86-win64-rev2 (1)\\openssl-0.9.8r-x64_86-win64-rev2;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\harla\\Anaconda2\\Scripts;C:\\Program Files\\MongoDB\\Server\\3.4\\bin;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\harla\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\harla\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Mozilla Firefox;C:\\Users\\harla\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\harla\\AppData\\Roaming\\Python\\Python36\\Scripts;C:\\Users\\harla\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/secApps/api/web/index.php'
+    'REMOTE_PORT' => '55268'
+    'REDIRECT_URL' => '/secApps/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/secApps/api/web/v1/countries'
+    'SCRIPT_NAME' => '/secApps/api/web/index.php'
+    'PHP_SELF' => '/secApps/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1506407716.037
+    'REQUEST_TIME' => 1506407716
+]
